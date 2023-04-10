@@ -1,5 +1,5 @@
 {
-  "name": "@yumyumtoken/contract-core",
+  "name": "@yumyumswap/contract-core",
   "description": "Core smart contracts of YumYumSwap",
   "license": "BUSL-1.1",
   "publishConfig": {

@@ -4,7 +4,7 @@
 [![Tests](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/tests.yml/badge.svg)](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/tests.yml)
 [![Fuzz Testing](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/fuzz-testing.yml/badge.svg)](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/fuzz-testing.yml)
 [![Mythx](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/mythx.yml/badge.svg)](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/mythx.yml)
-[![npm version](https://img.shields.io/npm/v/@YumYumToken/contract-core/latest.svg)](https://www.npmjs.com/package/@YumYumToken/contract-core/v/latest)
+[![npm version](https://img.shields.io/npm/v/@yumyumswap/contract-core/latest.svg)](https://www.npmjs.com/package/@yumyumswap/contract-core/v/latest)
 
 This repository contains the core smart contracts for the YumYumSwap Protocol.
 For higher level contracts, see the [uniswap-v3-periphery](https://github.com/Uniswap/uniswap-v3-periphery)
@@ -17,16 +17,16 @@ This repository is subject to the YumYumSwap bug bounty program, per the terms d
 ## Local deployment
 
 In order to deploy this code to a local testnet, you should install the npm package
-`@YumYumToken/contract-core`
+`@yumyumswap/contract-core`
 and import the factory bytecode located at
-`@YumYumToken/contract-core/artifacts/contracts/YumyumSwapFactory.sol/YumyumSwapFactory.json`.
+`@yumyumswap/contract-core/artifacts/contracts/YumyumSwapFactory.sol/YumyumSwapFactory.json`.
 For example:
 
 ```typescript
 import {
   abi as FACTORY_ABI,
   bytecode as FACTORY_BYTECODE,
-} from '@YumYumToken/contract-core/artifacts/contracts/YumyumSwapFactory.sol/YumyumSwapFactory.json'
+} from '@yumyumswap/contract-core/artifacts/contracts/YumyumSwapFactory.sol/YumyumSwapFactory.json'
 
 // deploy the bytecode
 ```
@@ -38,10 +38,10 @@ your local deployment.
 ## Using solidity interfaces
 
 The YumYumSwap interfaces are available for import into solidity smart contracts
-via the npm artifact `@YumYumToken/contract-core`, e.g.:
+via the npm artifact `@yumyumswap/contract-core`, e.g.:
 
 ```solidity
-import '@YumYumToken/contract-core/contracts/interfaces/IYumyumSwapPool.sol';
+import '@yumyumswap/contract-core/contracts/interfaces/IYumyumSwapPool.sol';
 
 contract MyContract {
   IYumyumSwapPool pool;
