@@ -19,8 +19,8 @@
   "files": [
     "contracts/interfaces",
     "contracts/libraries",
-    "artifacts/contracts/UniswapV3Factory.sol/UniswapV3Factory.json",
-    "artifacts/contracts/UniswapV3Pool.sol/UniswapV3Pool.json",
+    "artifacts/contracts/YumyumSwapFactory.sol/YumyumSwapFactory.json",
+    "artifacts/contracts/YumyumSwapPool.sol/YumyumSwapPool.json",
     "artifacts/contracts/interfaces/**/*.json",
     "!artifacts/contracts/interfaces/**/*.dbg.json"
   ],

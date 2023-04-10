@@ -6,27 +6,27 @@
 [![Mythx](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/mythx.yml/badge.svg)](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/mythx.yml)
 [![npm version](https://img.shields.io/npm/v/@YumYumToken/contract-core/latest.svg)](https://www.npmjs.com/package/@YumYumToken/contract-core/v/latest)
 
-This repository contains the core smart contracts for the Uniswap V3 Protocol.
+This repository contains the core smart contracts for the YumYumSwap Protocol.
 For higher level contracts, see the [uniswap-v3-periphery](https://github.com/Uniswap/uniswap-v3-periphery)
 repository.
 
 ## Bug bounty
 
-This repository is subject to the Uniswap V3 bug bounty program, per the terms defined [here](./bug-bounty.md).
+This repository is subject to the YumYumSwap bug bounty program, per the terms defined [here](./bug-bounty.md).
 
 ## Local deployment
 
 In order to deploy this code to a local testnet, you should install the npm package
 `@YumYumToken/contract-core`
 and import the factory bytecode located at
-`@YumYumToken/contract-core/artifacts/contracts/UniswapV3Factory.sol/UniswapV3Factory.json`.
+`@YumYumToken/contract-core/artifacts/contracts/YumyumSwapFactory.sol/YumyumSwapFactory.json`.
 For example:
 
 ```typescript
 import {
   abi as FACTORY_ABI,
   bytecode as FACTORY_BYTECODE,
-} from '@YumYumToken/contract-core/artifacts/contracts/UniswapV3Factory.sol/UniswapV3Factory.json'
+} from '@YumYumToken/contract-core/artifacts/contracts/YumyumSwapFactory.sol/YumyumSwapFactory.json'
 
 // deploy the bytecode
 ```
@@ -37,14 +37,14 @@ your local deployment.
 
 ## Using solidity interfaces
 
-The Uniswap v3 interfaces are available for import into solidity smart contracts
+The YumYumSwap interfaces are available for import into solidity smart contracts
 via the npm artifact `@YumYumToken/contract-core`, e.g.:
 
 ```solidity
-import '@YumYumToken/contract-core/contracts/interfaces/IUniswapV3Pool.sol';
+import '@YumYumToken/contract-core/contracts/interfaces/IYumyumSwapPool.sol';
 
 contract MyContract {
-  IUniswapV3Pool pool;
+  IYumyumSwapPool pool;
 
   function doSomethingWithPool() {
     // pool.swap(...);
@@ -55,7 +55,7 @@ contract MyContract {
 
 ## Licensing
 
-The primary license for Uniswap V3 Core is the Business Source License 1.1 (`BUSL-1.1`), see [`LICENSE`](./LICENSE). However, some files are dual licensed under `GPL-2.0-or-later`:
+The primary license for YumYumSwap Core is the Business Source License 1.1 (`BUSL-1.1`), see [`LICENSE`](./LICENSE). However, some files are dual licensed under `GPL-2.0-or-later`:
 
 - All files in `contracts/interfaces/` may also be licensed under `GPL-2.0-or-later` (as indicated in their SPDX headers), see [`contracts/interfaces/LICENSE`](./contracts/interfaces/LICENSE)
 - Several files in `contracts/libraries/` may also be licensed under `GPL-2.0-or-later` (as indicated in their SPDX headers), see [`contracts/libraries/LICENSE`](contracts/libraries/LICENSE)

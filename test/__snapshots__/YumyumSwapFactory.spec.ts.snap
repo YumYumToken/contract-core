@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`YumyumSwapFactory #createPool gas 1`] = `4557092`;
+
+exports[`YumyumSwapFactory factory bytecode size 1`] = `24535`;
+
+exports[`YumyumSwapFactory pool bytecode size 1`] = `22142`;

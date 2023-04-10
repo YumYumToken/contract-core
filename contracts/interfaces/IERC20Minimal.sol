@@ -2,7 +2,7 @@
 pragma solidity >=0.5.0;
 
 /// @title Minimal ERC20 interface for Uniswap
-/// @notice Contains a subset of the full ERC20 interface that is used in Uniswap V3
+/// @notice Contains a subset of the full ERC20 interface that is used in YumYumSwap
 interface IERC20Minimal {
     /// @notice Returns the balance of a token
     /// @param account The account for which to look up the number of tokens it has, i.e. its balance
