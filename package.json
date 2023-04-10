@@ -1,12 +1,12 @@
 {
-  "name": "@uniswap/v3-core",
-  "description": "🦄 Core smart contracts of Uniswap V3",
+  "name": "@yumyumtoken/contract-core",
+  "description": "Core smart contracts of YumYumSwap",
   "license": "BUSL-1.1",
   "publishConfig": {
     "access": "public"
   },
   "version": "1.0.1",
-  "homepage": "https://uniswap.org",
+  "homepage": "https://yumyumswap.com",
   "keywords": [
     "uniswap",
     "core",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Uniswap/uniswap-v3-core"
+    "url": "https://github.com/YumYumToken/contract-core"
   },
   "files": [
     "contracts/interfaces",

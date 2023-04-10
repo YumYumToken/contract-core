@@ -1,10 +1,10 @@
-# Uniswap V3
+# YumYumSwap
 
 [![Lint](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/lint.yml/badge.svg)](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/lint.yml)
 [![Tests](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/tests.yml/badge.svg)](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/tests.yml)
 [![Fuzz Testing](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/fuzz-testing.yml/badge.svg)](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/fuzz-testing.yml)
 [![Mythx](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/mythx.yml/badge.svg)](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/mythx.yml)
-[![npm version](https://img.shields.io/npm/v/@uniswap/v3-core/latest.svg)](https://www.npmjs.com/package/@uniswap/v3-core/v/latest)
+[![npm version](https://img.shields.io/npm/v/@YumYumToken/contract-core/latest.svg)](https://www.npmjs.com/package/@YumYumToken/contract-core/v/latest)
 
 This repository contains the core smart contracts for the Uniswap V3 Protocol.
 For higher level contracts, see the [uniswap-v3-periphery](https://github.com/Uniswap/uniswap-v3-periphery)
@@ -17,16 +17,16 @@ This repository is subject to the Uniswap V3 bug bounty program, per the terms d
 ## Local deployment
 
 In order to deploy this code to a local testnet, you should install the npm package
-`@uniswap/v3-core`
+`@YumYumToken/contract-core`
 and import the factory bytecode located at
-`@uniswap/v3-core/artifacts/contracts/UniswapV3Factory.sol/UniswapV3Factory.json`.
+`@YumYumToken/contract-core/artifacts/contracts/UniswapV3Factory.sol/UniswapV3Factory.json`.
 For example:
 
 ```typescript
 import {
   abi as FACTORY_ABI,
   bytecode as FACTORY_BYTECODE,
-} from '@uniswap/v3-core/artifacts/contracts/UniswapV3Factory.sol/UniswapV3Factory.json'
+} from '@YumYumToken/contract-core/artifacts/contracts/UniswapV3Factory.sol/UniswapV3Factory.json'
 
 // deploy the bytecode
 ```
@@ -38,10 +38,10 @@ your local deployment.
 ## Using solidity interfaces
 
 The Uniswap v3 interfaces are available for import into solidity smart contracts
-via the npm artifact `@uniswap/v3-core`, e.g.:
+via the npm artifact `@YumYumToken/contract-core`, e.g.:
 
 ```solidity
-import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
+import '@YumYumToken/contract-core/contracts/interfaces/IUniswapV3Pool.sol';
 
 contract MyContract {
   IUniswapV3Pool pool;
