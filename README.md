@@ -64,3 +64,7 @@ The primary license for YumYumSwap Core is the Business Source License 1.1 (`BUS
 
 - `contracts/libraries/FullMath.sol` is licensed under `MIT` (as indicated in its SPDX header), see [`contracts/libraries/LICENSE_MIT`](contracts/libraries/LICENSE_MIT)
 - All files in `contracts/test` remain unlicensed (as indicated in their SPDX headers).
+
+
+## deployment address 
+  - testnet YumyumSwapFactory deployed to: 0xB79E08735DDE71B58A489d7f1e8CF7f97402c5e0

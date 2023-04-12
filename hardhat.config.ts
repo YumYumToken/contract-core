@@ -47,7 +47,7 @@ export default {
     bnb: {
       url: `https://bsc-dataseed.binance.org/`,
     },
-    baseGoerli: {
+    "base-goerli": {
       url: `https://goerli.base.org/`,
       accounts: [`0x${process.env.PRIVATE_KEY}`],
     },
@@ -55,7 +55,22 @@ export default {
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: process.env.ETHERSCAN_API_KEY,
+    // apiKey: process.env.ETHERSCAN_API_KEY,
+    apiKey: {
+      // Basescan doesn't require an API key, however
+      // Hardhat still expects an arbitrary string to be provided.
+      "base-goerli": "PLACEHOLDER_STRING"
+     },
+     customChains: [
+      {
+        network: "base-goerli",
+        chainId: 84531,
+        urls: {
+         apiURL: "https://api-goerli.basescan.org/api",
+         browserURL: "https://goerli.basescan.org"
+        }
+      }
+    ]
   },
   solidity: {
     version: '0.7.6',
