@@ -2,6 +2,9 @@ import 'hardhat-typechain'
 import '@nomiclabs/hardhat-ethers'
 import '@nomiclabs/hardhat-waffle'
 import '@nomiclabs/hardhat-etherscan'
+import { resolve } from 'path'
+import { config as dotenvConfig } from 'dotenv'
+dotenvConfig({ path: resolve(__dirname, './.env') })
 
 export default {
   networks: {
@@ -43,6 +46,10 @@ export default {
     },
     bnb: {
       url: `https://bsc-dataseed.binance.org/`,
+    },
+    baseGoerli: {
+      url: `https://goerli.base.org/`,
+      accounts: [`0x${process.env.PRIVATE_KEY}`],
     },
   },
   etherscan: {
