@@ -51,6 +51,10 @@ export default {
       url: `https://goerli.base.org/`,
       accounts: [`0x${process.env.PRIVATE_KEY}`],
     },
+    pulse: {
+      url: `https://rpc.pulsechain.com/`,
+      accounts: [`0x${process.env.PRIVATE_KEY}`],
+    },
   },
   etherscan: {
     // Your API key for Etherscan
