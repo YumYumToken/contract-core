@@ -5,7 +5,6 @@ import '@nomiclabs/hardhat-etherscan'
 import { resolve } from 'path'
 import { config as dotenvConfig } from 'dotenv'
 dotenvConfig({ path: resolve(__dirname, './.env') })
-
 export default {
   networks: {
     hardhat: {
@@ -53,7 +52,7 @@ export default {
     },
     pulse: {
       url: `https://rpc.pulsechain.com/`,
-      accounts: [`0x${process.env.PRIVATE_KEY}`],
+      accounts: [`0x${process.env.PRIVATE_KEY}`]
     },
   },
   etherscan: {
@@ -63,7 +62,8 @@ export default {
     apiKey: {
       // Basescan doesn't require an API key, however
       // Hardhat still expects an arbitrary string to be provided.
-      "base-goerli": "PLACEHOLDER_STRING"
+      "base-goerli": "PLACEHOLDER_STRING",
+      pulse: "abc"
      },
      customChains: [
       {
@@ -72,6 +72,14 @@ export default {
         urls: {
          apiURL: "https://api-goerli.basescan.org/api",
          browserURL: "https://goerli.basescan.org"
+        }
+      },
+      {
+        network: "pulse",
+        chainId: 369,
+        urls: {
+         apiURL: "https://scan.pulsechain.com/api",
+         browserURL: "https://scan.pulsechain.com"
         }
       }
     ]
@@ -90,5 +98,9 @@ export default {
         bytecodeHash: 'none',
       },
     },
+  },
+  namedAccounts: {
+    deployer: 0,
+    // deployer: `ledger://${process.env.LEDGER_WALLET}`
   },
 }

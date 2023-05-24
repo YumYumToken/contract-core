@@ -67,4 +67,9 @@ The primary license for YumYumSwap Core is the Business Source License 1.1 (`BUS
 
 
 ## deployment address 
-  - testnet YumyumSwapFactory deployed to: 0xB79E08735DDE71B58A489d7f1e8CF7f97402c5e0
+  - base testnet YumyumSwapFactory deployed to: 0xB79E08735DDE71B58A489d7f1e8CF7f97402c5e0
+  - pulse mainnet YumyumSwapFactory deployed to 0x06393b72873077c523ed10B3Db69087875AF61ef
+## deploy with ledger
+  - node 14.18.2
+  - package "hardhat-deploy": "^0.7.9", "@ethersproject/hardware-wallets": "^5.7.0",
+  - npm rebuild
